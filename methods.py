@@ -2,22 +2,6 @@ import numpy as np  # для операций над векторами
 import math as mt  # для математических операций
 import matplotlib.pyplot as plt  # для построения графиков
 
-
-# функция, осуществляющая наполнение массива углами от 0 до 360
-def appendAngles(Ang):
-    for i in range(360):
-        Ang.append(i)
-
-
-# функция, осуществляющая наполнение массива нулевыми значения для дальнейшей записи значений энергии шаров
-def appenderNulls(E):
-    for j in range(3):
-        E1 = []
-        for i in range(360):
-            E1.append(0)
-        E.append(E1)
-
-
 # функция, осуществляющая построение графика зависимости энергии изначально покоящегося шара от угла удара
 def plot(Angles, E):
     plt.figure()
